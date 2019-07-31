@@ -15,7 +15,7 @@ class Repositories extends Component {
         } else {
             repoList.sort((a,b) => (a.updated_at > b.updated_at) ? -1 : 1);
         }
-        
+        console.log("REPOLIST: ", repoList);
         var repositoryCard = repoList.map( (card, index) => {
             
             return (
