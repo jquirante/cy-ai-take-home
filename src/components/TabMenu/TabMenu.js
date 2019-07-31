@@ -2,8 +2,6 @@ import './TabMenu.css';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Overview from '../MainContent/Overview';
-import Repositories from '../MainContent/Repositories';
 
 class TabMenu extends Component {
     
@@ -33,11 +31,13 @@ class TabMenu extends Component {
     }
 
     render() {
+
+        const { repoCount } = this.props;
         return(
-            <div className="container col 12">
+            <div className="container col s12">
                 <ul className="tab-menu">
                     <li onClick={this.handleTabClicked} className="tab active"><Link to="/">Overview</Link></li>
-                    <li onClick={this.handleTabClicked} className="tab"><Link to="/repositories">Repositories</Link></li>
+                    <li onClick={this.handleTabClicked} className="tab"><Link to="/repositories">Repositories<span className="total-repo-count">{repoCount}</span></Link></li>
                 </ul>
             </div>
         )

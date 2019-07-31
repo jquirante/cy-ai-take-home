@@ -1,6 +1,6 @@
 import './MainContent.css';
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, withRouter, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import axios from 'axios';
 import TabMenu from '../TabMenu/TabMenu';
 import Overview from './Overview';
@@ -30,7 +30,7 @@ class MainContent extends Component {
         const { repositories, search } = this.state;
         return(
             <div className="container">
-                <TabMenu/>
+                <TabMenu repoCount={repositories.length}/>
                 <div className="container">
                     <Route exact path="/" render={() => <Overview repoDetails={repositories}/>} />
                     <Route exact path="/repositories" render={ ()=> <Repositories searchBy={search} filter={this.handleFilter} repoDetails={repositories}/>} />  
