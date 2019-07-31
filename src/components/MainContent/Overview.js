@@ -12,16 +12,14 @@ class Overview extends Component {
         repoList.sort((a,b) => (a.stargazers_count > b.stargazers_count) ? -1 : 1);
     
         var repositoryCard = repoList.map( (card, index) => {
-                
                 return (
                     <RepositoryListing key={index} repoDetails={card}>
                     </RepositoryListing>
-                    
                 )      
         })
         return(
-            <div className="col s6">
-                <div>Popular Repositories</div>
+            <div className="col s7 offset-s3">
+                <div className="overview-header-description">Popular Repositories</div>
                 {repositoryCard}
             </div>
         )

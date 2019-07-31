@@ -13,7 +13,7 @@
 
 .tab.active {
     font-weight: bold;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid;
     border-bottom-color: orange;
 }
 
