@@ -10,9 +10,9 @@ class RepositoryListing extends Component {
                 <div className="repo-name">{name}</div>
                 <div className="repo-description">{description}</div>
                 <ul className="repo-stats">
-                    {language ? <li>{language}</li> : ''}
-                    <li>{stargazers_count}</li>
-                    <li>{forks_count}</li>
+                    {language ? <li>Language: {language}</li> : ''}
+                    <li>Favorites: {stargazers_count}</li>
+                    <li>Forks: {forks_count}</li>
                 </ul>
             </div>
         )
