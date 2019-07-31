@@ -29,6 +29,8 @@ Justen Quirante
 >    - `npm start`
 > 1. Open a browser and navigate to `localhost:3000`
 
+>> To Run Tests, use "npm test" in terminal/command prompt. Press a and enter to rerun all test files.
+
 ### Libraries/Tools Used
 
 > # React
@@ -56,10 +58,7 @@ Justen Quirante
 > Enhances React functionality by routing users to a specific url and rendering a specific component based on that url path or route
 >> Ex: The Overview Component (Component that contains the list of repos) in the "Overview Tab" is rendered for the base url "/" while the Repositories Component (Similar component for rendering repos) in the "Repositories Tab" are rendered for a url that matches "/repositories"
 
-> # React-Test-Renderer
-> Converts React Components into Pure Javascript objects to assist with snapshot testing pure components
-
-> Enzyme
+># Enzyme
 > React-testing Library. Assists with rendering components and accessing component members while testing
 
 > # Jest
