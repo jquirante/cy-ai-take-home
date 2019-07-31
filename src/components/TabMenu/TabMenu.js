@@ -34,7 +34,7 @@ class TabMenu extends Component {
 
         const { repoCount } = this.props;
         return(
-            <div className="container col s12">
+            <div className="container col s7 offset-s3">
                 <ul className="tab-menu">
                     <li onClick={this.handleTabClicked} className="tab active"><Link to="/">Overview</Link></li>
                     <li onClick={this.handleTabClicked} className="tab"><Link to="/repositories">Repositories<span className="total-repo-count">{repoCount}</span></Link></li>
