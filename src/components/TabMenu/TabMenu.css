@@ -1,0 +1,18 @@
+.tab-menu {
+    border-bottom: 1px solid grey;
+}
+.tab-menu * {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-right: 15px;
+    color: black;
+}
+
+
+.tab.active {
+    font-weight: bold;
+    border-bottom: 1px solid;
+    border-bottom-color: orange;
+}
+
+
